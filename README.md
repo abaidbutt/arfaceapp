@@ -19,7 +19,7 @@ To receive a new **trial** client token please fill in the [form on banuba.com](
 Clone the repository
 
 ```sh
-git clone https://abaidbutt/arfaceapp.git
+git clone https://github.com/abaidbutt/arfaceapp.git
 ```
 
 Insert Tokeen [client token](#obtaining-banuba-client-token) into `ClientToken.js`
