@@ -1,18 +1,14 @@
-# Banuba SDK Web AR demo app  
+# Web AR Face Filter app  
     
 ## Requirements
 
-- Banuba [client token](#obtaining-banuba-client-token)
+- [client token](#obtaining-banuba-client-token)
 - [Nodejs](https://nodejs.org/en/) installed
 - Browser with support of [WebGL 2.0](https://caniuse.com/#feat=webgl2)
 
-### Obtaining Banuba SDK Web AR
 
-For simplicity, the example uses the CDN version of the [@banuba/webar](https://www.npmjs.com/package/@banuba/webar) npm package.
-Please use the npm package mentioned above for real-world projects.
-Check out the [Integration tutorials](https://docs.banuba.com/face-ar-sdk-v1/web/web_tutorials_integrations) for more ways of consuming [@banuba/webar](https://www.npmjs.com/package/@banuba/webar) package.
 
-### Obtaining Banuba Client token
+### Obtaining Client token
 
 A  Client token is required to get Banuba SDK Web AR working.
 
