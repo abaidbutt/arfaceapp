@@ -8,28 +8,28 @@
 
 ### Obtaining Banuba SDK Web AR
 
-The example uses CDN version of the [@banuba/webar](https://www.npmjs.com/package/@banuba/webar) npm package for simplicity.
-Please use the npm package mentioned above for real world projects.
+For simplicity, the example uses the CDN version of the [@banuba/webar](https://www.npmjs.com/package/@banuba/webar) npm package.
+Please use the npm package mentioned above for real-world projects.
 Check out the [Integration tutorials](https://docs.banuba.com/face-ar-sdk-v1/web/web_tutorials_integrations) for more ways of consuming [@banuba/webar](https://www.npmjs.com/package/@banuba/webar) package.
 
 ### Obtaining Banuba Client token
 
-Banuba Client token is required to get Banuba SDK Web AR working.
+A  Client token is required to get Banuba SDK Web AR working.
 
-To receive a new **trial** client token please fill in the [form on banuba.com](https://www.banuba.com/face-filters-sdk) website, or contact us via [info@banuba.com](mailto:info@banuba.com).
+To receive a new **trial** client token please fill in the [form on banuba.com](https://www.banuba.com/face-filters-sdk) website, or contact us via [abaidbutt](mailto:bestabaidullahbutt@gmail.com).
 
 ## Environment setup and local run
 
 Clone the repository
 
 ```sh
-git clone git@github.com:Banuba/quickstart-web.git
+git clone https://abaidbutt/arfaceapp.git
 ```
 
-Insert Banuba [client token](#obtaining-banuba-client-token) into `BanubaClientToken.js`
+Insert Tokeen [client token](#obtaining-banuba-client-token) into `ClientToken.js`
 
 ```js
-window.BANUBA_CLIENT_TOKEN = "PUT YOUR CLIENT TOKEN HERE"
+window.CLIENT_TOKEN = "PUT YOUR CLIENT TOKEN HERE"
 ```
 
 Run the live server in the cloned folder
@@ -62,7 +62,7 @@ Add the effect name into `effects` array at [index.html, line 65](/index.html#L6
 
 ```diff
 <script type="module">
-  import { Effect, Webcam, Player, VideoRecorder, ImageCapture, Dom } from "./BanubaSDK.js"
+  import { Effect, Webcam, Player, VideoRecorder, ImageCapture, Dom } from "https://cdn.jsdelivr.net/npm/@banuba/webar/dist/BanubaSDK.browser.esm.min.js"
 
   const effects = [
 +   "NewEffect",
@@ -75,8 +75,4 @@ Add the effect name into `effects` array at [index.html, line 65](/index.html#L6
   ]
 ```
 
-You can obtain more effects on the [Demo Face Filters](https://docs.banuba.com/face-ar-sdk-v1/overview/demo_face_filters) page.
 
----
-  
-Learn more about Banuba WebAR SDK on the [Web](https://docs.banuba.com/face-ar-sdk-v1/web/web_overview) section of [docs.banuba.com](https://docs.banuba.com).
